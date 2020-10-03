@@ -1,0 +1,46 @@
+.all {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  grid-gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+}
+
+.left img {
+  width: 80%;
+  position: relative;
+  top: 15%;
+  left: 10%;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--secondaryTitle);
+  margin: 40% 0 25px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.register {
+  display: flex;
+  flex-flow: row wrap;
+}
+.register,.form-login {
+  margin: 2% 60px;
+}
+
+.register, .register a {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.feather {
+  padding: 0 10px 0 0;
+}

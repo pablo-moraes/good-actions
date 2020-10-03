@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --background: #F0F0F5;
+    --error: #E83A5F;
+    --mainText:#1B1C25;                                        
+    --texts: #737380;
+    --secondaryTexts: #A8A8B3;
+    --mainTitle: #13131A;
+    --secondaryTitle: #41414D ;
+    --line: #DCDCE6;
+    --solidaryBlue: #342EAD;
+    --success: #34CB79;
+}
+
+html, body {
+    height: 100%;
+    font-size: 60%;
+    background: var(--background);
+}
+
+h1:not(.title-header){
+  padding-top: 4%;
+  padding-bottom: 4%;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--mainTitle);
+  font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--solidaryBlue);
+}
+
+form:not(.form-login) {
+  padding: 0 200px;
+  margin-top: 5%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4%;
+    margin-bottom: 2%;
+}
+
+.form-row:nth-child(4) {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.form-row:nth-child(6) {
+  grid-template-columns: repeat(2, 2fr) 1fr;
+}
+
+.form-row:nth-child(7) {
+  grid-template-columns: repeat(4, 2fr);
+}
+
+.all-size {
+  grid-template-columns: 1fr;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--texts);
+}
+
+select {
+  border-color: #28a745;
+  padding-right: calc(0.75em + 2.3125rem);
+}
+
+select, input, button, button a {
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+textarea, select, input, button {
+  border-radius: 8px;
+  margin: 1% 0;
+}
+
+button, button a {
+    background: var(--solidaryBlue);
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+button:hover {
+  background: rgb(48, 42, 162);
+  cursor: pointer;
+}
+
+select, input, textarea {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid var(--line);
+  background: white;
+}
+
+/* Header */
+header {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 5px 0 rgba(0,0,0, 0.2);
+}
+
+header h1 {
+  padding: 15px 60px;
+}
+
+h1 a {
+  font-size: 1.8rem;
+  color: var(--secondaryTitle);
+  font-weight: 500;
+}
